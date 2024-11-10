@@ -1,0 +1,8 @@
+# Specify correct language for files mistakenly identified as Hack
+*.ipynb linguist-language=python
+
+# Mark all files in the vendor directory as vendored (ignored in language stats)
+vendor/* linguist-vendored
+
+# Ignore any file with a .hack extension if they aren’t Hack language files
+*.hack linguist-vendored
